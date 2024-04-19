@@ -14,10 +14,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 // Routes
-app.get("/", (req, res) => {
-	res.send("Server is running");
-});
-app.use("/api/auth", authRoutes);
+const productRoutes = require("./routes/product");
 app.use("/api/products", productRoutes);
 
 // Start server
