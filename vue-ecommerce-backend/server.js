@@ -14,7 +14,6 @@ app.use(bodyParser.json());
 app.use(cors());
 
 // Routes
-const productRoutes = require("./routes/product");
 app.use("/api/products", productRoutes);
 
 // Start server
