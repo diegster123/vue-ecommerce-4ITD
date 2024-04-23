@@ -5,13 +5,13 @@ module.exports = {
 	},
 	extends: [
 		"plugin:vue/vue3-essential",
-		"@vue/standard",
+		"@vue/eslint-config-standard",
 		"@vue/typescript/recommended",
 	],
 	parserOptions: {
 		ecmaVersion: 2020,
 	},
 	rules: {
-		// Add custom ESLint rules here
+		"no-tabs": 0,
 	},
 };
